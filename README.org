@@ -12,14 +12,14 @@
 
 ** Parameters
 
-#+BEGIN_SRC sh
+#+BEGIN_SRC sh :tangle src/copy_library.sh
 src=$1
 dst=$2
 #+END_SRC
 
 ** Copy books
 
-#+BEGIN_SRC sh
+#+BEGIN_SRC sh :tangle src/copy_library.sh
 find $src | grep "\(.epub\|.fb2\)$" | 
 while read line
 do
